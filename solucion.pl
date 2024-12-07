@@ -1,4 +1,4 @@
-% Solución en Prolog
+% solucion en prolog
 
 % punto 1
 
@@ -43,8 +43,8 @@ viviendaCopada(loft(Anio)):- Anio > 2015.
 
 %barrioCaro(Barrio):
 %    barrio(Barrio),
-%    findall(Barrio, (residencia(Persona,Barrio),vive(Persona,Casa),(barrioBarato(Casa)), BarriosCaros),
-%    length(BarriosCaros, Cantidad), Cantidad >1.
+%    findall(Barrio, (residencia(Persona,Barrio),vive(Persona,Casa),barrioBarato(Casa)), BarriosBaratos),
+%    length(BarriosBaratos, Cantidad), not(Cantidad >1).
 
 
 barrioCaro(Barrio):-
@@ -79,6 +79,9 @@ evaluarCompras(Dinero,[Cabeza|_],[_|Cola],Sublista):-
     
 posiblesCombinaciones(Cabeza,Cola,Resultado):-
     sublista(Cabeza,Cola).
+
+
+    
 
 
     
